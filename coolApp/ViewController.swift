@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var ohrangerLabel: UIImageView!
+    @IBOutlet weak var ohrangerBg: UIImageView!
+    
+    @IBOutlet weak var ohrangeGoto: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +25,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func ohrangeBtnCool(sender: AnyObject) {
+        
+        ohrangerLabel.hidden = false
+        ohrangerBg.hidden = false
+        ohrangeGoto.hidden = true
+        
+    }
 
 }
 
